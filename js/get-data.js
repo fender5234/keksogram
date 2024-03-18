@@ -2,7 +2,7 @@ import { getRandomPositiveInteger } from "./utils.js"
 import { nameUsers, photoDescription } from "./mock-data.js"
 import { commentScopes } from './comments-scope.js';
 
-function generateDescriptionPhoto(i) {
+function generatePhoto(i) {
   return {
     id: i,
     url: `photos/${i}.jpg`,
@@ -21,10 +21,10 @@ function getArrayPhotoDescription(numberOfObjects) {
   const ArrayPhotoDescription = [];
 
   for (let i = 1; i <= numberOfObjects; i++) {
-    ArrayPhotoDescription.push(generateDescriptionPhoto(i));
+    ArrayPhotoDescription.push(generatePhoto(i));
   }
   return ArrayPhotoDescription;
 }
 
-export { generateDescriptionPhoto, getArrayPhotoDescription };
+export { generatePhoto, getArrayPhotoDescription };
 
