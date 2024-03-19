@@ -5,7 +5,7 @@ const picturesTemplate = document.querySelector('#picture').content.querySelecto
 
 const photoArray = getArrayPhotoDescription(25);
 
-console.log(photoArray);
+
 
 photoArray.forEach((item) => {
   const pictureElement = picturesTemplate.cloneNode(true);

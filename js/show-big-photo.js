@@ -1,14 +1,18 @@
-function showBigPhoto(currentPhoto, bigPictureSection) {
-
-  const { bigPictureContainer, bigPictureImage, bigPictureLikesCount, bigPictureCommentsCount } = bigPictureSection;
-  const { id, url, description, likes , comments} = currentPhoto;
-
+function showBigPhoto(
+  { id, url, description, likes, comments },
+  {
+    bigPictureContainer,
+    bigPictureImage,
+    bigPictureLikesCount,
+    bigPictureCommentsCount,
+  }
+) {
   bigPictureImage.setAttribute('src', url);
   bigPictureLikesCount.textContent = likes;
   bigPictureCommentsCount.textContent = comments.message.length;
 
   bigPictureContainer.classList.remove('hidden');
   document.body.classList.add('modal-open');
-};
+}
 
-export { showBigPhoto }; 
+export { showBigPhoto };
