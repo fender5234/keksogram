@@ -1,5 +1,6 @@
 import './show-users-pictures.js';
 import './comments-scope.js';
+import './get-comment.js'
 import { showBigPhoto } from './show-big-photo.js';
 import { hideBigPhoto } from './hide-big-photo.js';
 import { photoArray } from './show-users-pictures.js';
